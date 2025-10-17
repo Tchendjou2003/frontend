@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Films from './Films';
 
 function App() {
+  const titleStyle = {
+    textAlign: 'center',
+    color: 'black',
+    fontSize: '2.5rem',
+    fontWeight: 'bold',
+    margin: '0',
+    padding: '30px 0 20px 0',
+    textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 style={titleStyle}>Gestion de Films</h1>
+      <Films />
     </div>
   );
 }
